@@ -4,12 +4,15 @@
 </head>
 <body>
   <iframe id="chatbox_preview" frameborder="0" width="60%" src="../chatbox/chat_preview.html"></iframe>
-  <iframe frameborder="0" width="30%" src="../chatbox/chat_post.html"></iframe>
+  <iframe id="chatbox_post" frameborder="0" width="30%" src="../chatbox/chat_post.html"></iframe>
 </body>
   <script>
     function reloadChat() {
       document.getElementById('chatbox_preview').contentWindow.location.reload();
       window.setTimeout(reloadChat, 5000);
+    }
+    function reloadChatPost() {
+       document.getElementById('chatbox_post').contentWindow.location.reload();  
     }
     setTimeout(reloadChat, 5000);
   </script>
