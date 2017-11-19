@@ -10,8 +10,7 @@
   
   function drawCell(tr, val) {
       var td = $("<td/>");
-      tr.append(td);
-      td.append(val);
+      tr.append(td);      td.append(val);
       return td;
   }
   function drawRow(table, rowData) {
@@ -49,7 +48,7 @@
       drawRow(table, rowData);
   }
 function reloadChat() {
-      window.setTimeout(readData($("#data"));, 5000);
+      window.setTimeout(readData($("#data")), 5000);
   }
   $(document).ready(function(){
 	  
