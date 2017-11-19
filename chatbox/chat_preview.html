@@ -48,8 +48,13 @@
       }
       drawRow(table, rowData);
   }
+function reloadChat() {
+      window.setTimeout(readData($("#data"));, 5000);
+  }
   $(document).ready(function(){
+	  
       readData($("#data"));
+	reloadChat();
   });
   </script>   
 <script src="https://spreadsheets.google.com/feeds/cells/1xAbPj6YgOWm2LzgrArirLceLfaJZEJ5D2pbo3WkR_x0/1/public/values?alt=json-in-script&callback=doData"></script>
