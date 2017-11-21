@@ -1,0 +1,9 @@
+.chat_post_label {
+	display: inline-block;
+	
+	box-flex: 1;
+}
+.chat_post_input {
+	display: inline-block;
+	box-flex: 1;
+}
