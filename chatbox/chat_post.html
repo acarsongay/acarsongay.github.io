@@ -1,4 +1,9 @@
-<form action="https://docs.google.com/forms/d/1ZE66gIU2Qb10MmluYxXOstpgchH-saJpqpxtwbdgyis/formResponse?embedded=true" method="POST" id="ss-form" target="_self" onsubmit="">
+
+<script type="text/javascript">var submitted=false;</script>
+    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"     
+onload="if(submitted) {window.location='./chat_post.html';}"></iframe>
+      <form action="https://docs.google.com/forms/d/1ZE66gIU2Qb10MmluYxXOstpgchH-saJpqpxtwbdgyis/formResponse?embedded=true" method="post" target="hidden_iframe" 
+onsubmit="submitted=true;">
       <div class="ss-form-entry">
         <label class="ss-q-item-label" for="entry_1737242977">
           <div class="ss-q-help ss-secondary-text" dir="auto">Name:</div>
@@ -10,5 +15,5 @@
         </label>
         <input type="text" name="entry.1563494232" value="" class="ss-q-short" id="entry_1563494232 my-message" dir="auto" aria-label="Name" title="">
       </div>
-      <input type="submit" name="submit" value="Send" id="ss-submit" class="jfk-button jfk-button-action ">
+      <input action="./chat_post.html" type="submit" name="submit" value="Send" id="ss-submit" class="jfk-button jfk-button-action ">
   </form>
