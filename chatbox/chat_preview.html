@@ -1,9 +1,11 @@
 <!doctype html>
 <html>
 <head>
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script type="text/javascript">
+  var spreadsheetURL = "https://spreadsheets.google.com/feeds/cells/1xAbPj6YgOWm2LzgrArirLceLfaJZEJ5D2pbo3WkR_x0/1/public/values?alt=json";
   var spData = null;
+  var row = 0
   function doData(json) {
       spData = json.feed.entry;
   }
@@ -13,13 +15,14 @@
       tr.append(td);      td.append(val);
       return td;
   }
-  function drawRow(table, rowData) {
+  function drawRow(table, rowData, r) {
 	  if (rowData == null) return null;
 	  if (rowData.length == 0) return null;
-	  var tr = $("<tr/>");
+	  var tr = $("<tr/>").addClass("row-" + row);
+    row++;
 	  table.append(tr);
 	  for(var c=0; c<rowData.length; c++) {
-		  drawCell(tr, rowData[c]);
+		  drawCell(tr, rowData[c]).addClass("cell-" + c);
 	  }
 	  return tr;
   }
@@ -31,7 +34,6 @@
   }
   
   function readData(parent) {
-    console.log(spData);
       var data = spData;
       var table = drawTable(parent);
       var rowData = [];
@@ -48,10 +50,17 @@
       drawRow(table, rowData);
   }
   $(document).ready(function(){
-	  
       readData($("#data"));
   });
+  function getChatResponses() {
+    $.getJSON(spreadsheetURL, function(data){
+      spData = data.feed.entry;
+    });
+  }
   </script>   
+
+
+
 <script src="https://spreadsheets.google.com/feeds/cells/1xAbPj6YgOWm2LzgrArirLceLfaJZEJ5D2pbo3WkR_x0/1/public/values?alt=json-in-script&callback=doData"></script>
 <style type="text/css">
   table {border-collapse: collapse; width: 100%;}
@@ -74,10 +83,6 @@
 </head>
 <body> 
 <div id="data"/>
-  <base target="_top">
-    <script>
-      google.script.run.doGetData();
-    </script>
-
+<div id="display"/>
 </body>
 </html> 
