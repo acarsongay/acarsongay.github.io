@@ -1,6 +1,7 @@
 <!doctype html>
 <html>
   <head>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script type="text/javascript">
       var spreadsheetURL = "https://spreadsheets.google.com/feeds/cells/1xAbPj6YgOWm2LzgrArirLceLfaJZEJ5D2pbo3WkR_x0/1/public/values?alt=json";
@@ -89,9 +90,11 @@
     <div id="chatbox">
       <div id="data"></div>
       <div id="chatbox_user_input">
-        <script type="text/javascript">var submitted=false;</script>
+        <script type="text/javascript">
+          var submitted=false;
+        </script>
         <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" 
-                onload="if(submitted) {window.location='./chatbox.html';}"></iframe>
+                onload="if(submitted) {setTimeout(function(){window.location='./chatbox.html';}, 500);}"></iframe>
 
         <form action="https://docs.google.com/forms/d/1ZE66gIU2Qb10MmluYxXOstpgchH-saJpqpxtwbdgyis/formResponse?embedded=true" 
               method="post" 
@@ -109,8 +112,7 @@
             </label>
             <input class="chat_post_input" action="./chat_post.html" type="text" name="entry.1563494232" value="" " id="entry_1563494232 my-message" dir="auto" aria-label="Message" title="">
 
-
-            <input action="./chat_post.html" type="submit" name="submit" value="Send" id="chatbox_submit">
+            <input action="" type="submit" name="submit" value="Send" id="chatbox_submit">
 
           </div>
 
