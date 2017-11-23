@@ -98,7 +98,7 @@ layout: default
    */
   function listMajors() {
     gapi.client.sheets.spreadsheets.values.get({
-      spreadsheetId: {{ site.chatbox_sheet_id }},
+      spreadsheetId: '{{ site.chatbox_sheet_id }}',
       range: 'A2:C20',
     }).then(function(response) {
       var range = response.result;
