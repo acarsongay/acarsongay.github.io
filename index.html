@@ -5,6 +5,7 @@ layout: default
 <!--Add buttons to initiate auth sequence and sign out-->
 <button id="authorize-button" style="display: none;">Authorize</button>
 <button id="signout-button" style="display: none;">Sign Out</button>
+<button id="reload-chatbox-button" style="display: none;">Reload Chatbox</button>
 
 <pre id="content"></pre>
 
@@ -22,7 +23,7 @@ layout: default
 
   var authorizeButton = document.getElementById('authorize-button');
   var signoutButton = document.getElementById('signout-button');
-
+  var reloadChatBoxButton = document.getElementById('reload-chatbox-button');
   /**
    *  On load, called to load the auth2 library and API client library.
    */
@@ -48,6 +49,7 @@ layout: default
       updateSigninStatus(gapi.auth2.getAuthInstance().isSignedIn.get());
       authorizeButton.onclick = handleAuthClick;
       signoutButton.onclick = handleSignoutClick;
+      reloadChatBoxButton.onclick = handleReloadChatBoxClick;
     });
   }
 
@@ -59,10 +61,12 @@ layout: default
     if (isSignedIn) {
       authorizeButton.style.display = 'none';
       signoutButton.style.display = 'block';
+      reloadChatBoxButton.style.display = 'block';
       listMajors();
     } else {
       authorizeButton.style.display = 'block';
       signoutButton.style.display = 'none';
+      reloadChatBoxButton.style.display = 'none';
     }
   }
 
@@ -79,6 +83,13 @@ layout: default
   function handleSignoutClick(event) {
     gapi.auth2.getAuthInstance().signOut();
   }
+
+  /**
+   * Reload chat box
+   */
+   function handleReloadChatBox(event) {
+    listMajors();
+   }
 
   /**
    * Append a pre element to the body containing the given message
