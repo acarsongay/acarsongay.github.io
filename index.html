@@ -88,7 +88,8 @@ layout: default
    * Reload chat box
    */
    function handleReloadChatBoxClick(vent) {
-    location.reload();
+    document.getElementById('content').content("");
+    listMajors();
    }
 
   /**
