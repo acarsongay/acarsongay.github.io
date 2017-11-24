@@ -7,7 +7,7 @@ layout: default
 <button id="signout-button" style="display: none;">Sign Out</button>
 <button id="reload-chatbox-button" style="display: none;">Reload Chatbox</button>
 
-<pre id="content"></pre>
+<pre id="chatbox_messages"></pre>
 
 <script type="text/javascript">
   // Client ID and API key from the Developer Console
@@ -88,11 +88,11 @@ layout: default
    * Reload chat box
    */
    function handleReloadChatBoxClick(event) {
-    reloadChat();
+     chatbox_reload();
    }
 
-   function reloadChat() {
-    document.getElementById('content').innerHTML = "";
+   function chatbox_reload() {
+    document.getElementById('chatbox_messages').innerHTML = "";
     listMajors();
    }
 
@@ -103,7 +103,7 @@ layout: default
    * @param {string} message Text to be placed in pre element.
    */
   function appendPre(message) {
-    var pre = document.getElementById('content');
+    var pre = document.getElementById('chatbox_messages');
     var textContent = document.createTextNode(message + '\n');
     pre.appendChild(textContent);
   }
