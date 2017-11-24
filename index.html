@@ -142,13 +142,14 @@ layout: default
 
 <script type="text/javascript">
   var submitted=false;
-  function chatbox_clear_form_input() {
+  function chatbox_clear_form_input_and_reload() {
     document.getElementById("chatbox_input_name").value = "";
     document.getElementById("chatbox_input_message").value = "";
+    chatbox_reload();
   }
 </script>
     <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"     
-onload="if(submitted) {chatbox_reload(); chatbox_clear_form_input();}"></iframe>
+onload="if(submitted) {document.setTimeout(chatbox_clear_form_input_and_reload(), 1000);}"></iframe>
       <form action="https://docs.google.com/forms/d/1ZE66gIU2Qb10MmluYxXOstpgchH-saJpqpxtwbdgyis/formResponse?embedded=true" method="post" target="hidden_iframe" 
 onsubmit="submitted=true;">
       <div>
