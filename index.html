@@ -149,7 +149,7 @@ layout: default
   }
 </script>
     <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"     
-onload="if(submitted) {document.setTimeout(chatbox_clear_form_input_and_reload(), 1000);}"></iframe>
+onload="if(submitted) {window.setTimeout(chatbox_clear_form_input_and_reload(), 1000);}"></iframe>
       <form action="https://docs.google.com/forms/d/1ZE66gIU2Qb10MmluYxXOstpgchH-saJpqpxtwbdgyis/formResponse?embedded=true" method="post" target="hidden_iframe" 
 onsubmit="submitted=true;">
       <div>
