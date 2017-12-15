@@ -1,0 +1,986 @@
+[
+  {
+    "attribute_name": "accept",
+    "elements": [
+      "form",
+      "input"
+    ],
+    "description": "List of types the server accepts, typically a file type."
+  },
+  {
+    "attribute_name": "accept-charset",
+    "elements": [
+      "form"
+    ],
+    "description": "List of supported charsets."
+  },
+  {
+    "attribute_name": "accesskey",
+    "elements": "global_attribute",
+    "description": "Defines a keyboard shortcut to activate or add focus to the element."
+  },
+  {
+    "attribute_name": "action",
+    "elements": [
+      "form"
+    ],
+    "description": "The URI of a program that processes the information submitted via the form."
+  },
+  {
+    "attribute_name": "align",
+    "elements": [
+      "applet",
+      "caption",
+      "col",
+      "colgroup",
+      "hr",
+      "iframe",
+      "img",
+      "table",
+      "tbody",
+      "td",
+      "tfoot",
+      "th",
+      "thead",
+      "tr"
+    ],
+    "description": "Specifies the horizontal alignment of the element."
+  },
+  {
+    "attribute_name": "align",
+    "elements": [
+      "applet",
+      "caption",
+      "col",
+      "colgroup",
+      "hr",
+      "iframe",
+      "img",
+      "table",
+      "tbody",
+      "td",
+      "tfoot",
+      "th",
+      "thead",
+      "tr"
+    ],
+    "description": "Specifies the horizontal alignment of the element."
+  },
+  {
+    "attribute_name": "alt",
+    "elements": [
+      "applet",
+      "area",
+      "img",
+      "input"
+    ],
+    "description": "Alternative text in case an image can't be displayed."
+  },
+  {
+    "attribute_name": "async",
+    "elements": [
+      "script"
+    ],
+    "description": "Indicates that the script should be executed asynchronously."
+  },
+  {
+    "attribute_name": "autocomplete",
+    "elements": [
+      "form",
+      "input"
+    ],
+    "description": "Indicates whether controls in this form can by default have their values automatically completed by the browser."
+  },
+  {
+    "attribute_name": "autofocus",
+    "elements": [
+      "button",
+      "input",
+      "keygen",
+      "select",
+      "textarea"
+    ],
+    "description": "The element should be automatically focused after the page loaded."
+  },
+  {
+    "attribute_name": "autoplay",
+    "elements": [
+      "audio",
+      "video"
+    ],
+    "description": "The audio or video should play as soon as possible."
+  },
+  {
+    "attribute_name": "bgcolor",
+    "elements": [
+      "body",
+      "col",
+      "colgroup",
+      "marquee",
+      "table",
+      "tbody",
+      "tfoot",
+      "td",
+      "th",
+      "tr"
+    ],
+    "description": "Background color of the element."
+  },
+  {
+    "attribute_name": "autofocus",
+    "elements": [
+      "button",
+      "input",
+      "keygen",
+      "select",
+      "textarea"
+    ],
+    "description": {
+      "value": "The element should be automatically focused after the page loaded.",
+      "note": "This is a legacy attribute. Please use the CSS background-color property instead."
+    }
+  },
+  {
+    "attribute_name": "border",
+    "elements": [
+      "img",
+      "object",
+      "table"
+    ],
+    "description": {
+      "value": "The border width",
+      "note": "This is a legacy attribute. Please use the CSS border property instead."
+    }
+  },
+  {
+    "attribute_name": "buffered",
+    "elements": [
+      "audio",
+      "video"
+    ],
+    "description": "Contains the time range of already buffered media."
+  },
+  {
+    "attribute_name": "challenge",
+    "elements": [
+      "keygen"
+    ],
+    "description": "A challenge string that is submitted along with the public key."
+  },
+  {
+    "attribute_name": "charset",
+    "elements": [
+      "meta",
+      "script"
+    ],
+    "description": "Declares the character encoding of the page or script."
+  },
+  {
+    "attribute_name": "checked",
+    "elements": [
+      "command",
+      "input"
+    ],
+    "description": "Indicates whether the element should be checked on page load."
+  },
+  {
+    "attribute_name": "cite",
+    "elements": [
+      "blockquote",
+      "del",
+      "ins",
+      "q"
+    ],
+    "description": "Contains a URI which points to the source of the quote or change."
+  },
+  {
+    "attribute_name": "class",
+    "elements": "global_attribute",
+    "description": "Often used with CSS to style elements with common properties."
+  },
+  {
+    "attribute_name": "code",
+    "elements": [
+      "applet"
+    ],
+    "description": "Specifies the URL of the applet's class file to be loaded and executed."
+  },
+  {
+    "attribute_name": "codebase",
+    "elements": [
+      "applet"
+    ],
+    "description": "This attribute gives the absolute or relative URL of the directory where applets' .class files referenced by the code attribute are stored."
+  },
+  {
+    "attribute_name": "color",
+    "elements": [
+      "basefont",
+      "font",
+      "hr"
+    ],
+    "description": {
+      "value": "This attribute sets the text color using either a named color or a color specified in the hexadecimal #RRGGBB format.",
+      "note": "This is a legacy attribute. Please use the CSS color property instead."
+    }
+  },
+  {
+    "attribute_name": "cols",
+    "elements": [
+      "textarea"
+    ],
+    "description": "Defines the number of columns in a textarea."
+  },
+  {
+    "attribute_name": "colspan",
+    "elements": [
+      "td",
+      "th"
+    ],
+    "description": "The colspan attribute defines the number of columns a cell should span."
+  },
+  {
+    "attribute_name": "content",
+    "elements": [
+      "meta"
+    ],
+    "description": "A value associated with http-equiv or name depending on the context."
+  },
+  {
+    "attribute_name": "contenteditable",
+    "elements": "global_attribute",
+    "description": "Indicates whether the element's content is editable."
+  },
+  {
+    "attribute_name": "contextmenu",
+    "elements": "global_attribute",
+    "description": "Defines the ID of a <menu> element which will serve as the element's context menu."
+  },
+  {
+    "attribute_name": "controls",
+    "elements": [
+      "audio",
+      "video"
+    ],
+    "description": "Indicates whether the browser should show playback controls to the user."
+  },
+  {
+    "attribute_name": "coords",
+    "elements": [
+      "area"
+    ],
+    "description": "A set of values specifying the coordinates of the hot-spot region."
+  },
+  {
+    "attribute_name": "crossorigin",
+    "elements": [
+      "audio",
+      "img",
+      "link",
+      "script",
+      "video"
+    ],
+    "description": "How the element handles cross-origin requests"
+  },
+  {
+    "attribute_name": "data",
+    "elements": [
+      "object"
+    ],
+    "description": "Specifies the URL of the resource."
+  },
+  {
+    "attribute_name": "data-*",
+    "elements": "global_attribute",
+    "description:": "Lets you attach custom attributes to an HTML element."
+  },
+  {
+    "attribute_name": "datetime",
+    "elements": [
+      "del",
+      "ins",
+      "time"
+    ],
+    "description": "Indicates the date and time associated with the element."
+  },
+  {
+    "attribute_name": "default",
+    "elements": [
+      "track"
+    ],
+    "description": "Indicates that the track should be enabled unless the user's preferences indicate something different."
+  },
+  {
+    "attribute_name": "defer",
+    "elements": [
+      "script"
+    ],
+    "description": "Indicates that the script should be executed after the page has been parsed."
+  },
+  {
+    "attribute_name": "dir",
+    "elements": "global_attribute",
+    "description": "Defines the text direction. Allowed values are ltr (Left-To-Right) or rtl (Right-To-Left)"
+  },
+  {
+    "attribute_name": "dirname",
+    "elements": [
+      "input",
+      "textarea"
+    ],
+    "description": ""
+  },
+  {
+    "attribute_name": "disabled",
+    "elements": [
+      "button",
+      "command",
+      "fieldset",
+      "input",
+      "keygen",
+      "optgroup",
+      "option",
+      "select",
+      "textarea"
+    ],
+    "description": "Indicates whether the user can interact with the element."
+  },
+  {
+    "attribute_name": "download",
+    "elements": [
+      "a",
+      "area"
+    ],
+    "description": "Indicates that the hyperlink is to be used for downloading a resource."
+  },
+  {
+    "attribute_name": "draggable",
+    "elements": "global_attribute",
+    "description": "Defines whether the element can be dragged."
+  },
+  {
+    "attribute_name": "dropzone",
+    "elements": "global_attribute",
+    "description": "Indicates that the element accept the dropping of content on it."
+  },
+  {
+    "attribute_name": "enctype",
+    "elements": [
+      "form"
+    ],
+    "description": "Defines the content type of the form date when the method is POST."
+  },
+  {
+    "attribute_name": "for",
+    "elements": [
+      "label",
+      "output"
+    ],
+    "description": "Describes elements which belongs to this one."
+  },
+  {
+    "attribute_name": "form",
+    "elements": [
+      "button",
+      "fieldset",
+      "input",
+      "keygen",
+      "label",
+      "meter",
+      "object",
+      "output",
+      "progress",
+      "select",
+      "textarea"
+    ],
+    "description": "Indicates the form that is the owner of the element."
+  },
+  {
+    "attribute_name": "formaction",
+    "elements": [
+      "input",
+      "button"
+    ],
+    "description": "Indicates the action of the element, overriding the action defined in the <form>."
+  },
+  {
+    "attribute_name": "headers",
+    "elements": [
+      "td",
+      "th"
+    ],
+    "description": "IDs of the <th> elements which applies to this element."
+  },
+  {
+    "attribute_name": "height",
+    "elements": [
+      "canvas",
+      "embed",
+      "iframe",
+      "img",
+      "input",
+      "object",
+      "video"
+    ],
+    "description": {
+      "value": "Specifies the height of elements listed here. For all other elements, use the CSS height property.",
+      "note": " In some instances, such as <div>, this is a legacy attribute, in which case the CSS height property should be used instead."
+    }
+  },
+  {
+    "attribute_name": "hidden",
+    "elements": "global_attribute",
+    "description": "Prevents rendering of given element, while keeping child elements, e.g. script elements, active."
+  },
+  {
+    "attribute_name": "high",
+    "elements": [
+      "meter"
+    ],
+    "description": "Indicates the lower bound of the upper range."
+  },
+  {
+    "attribute_name": "href",
+    "elements": [
+      "a",
+      "area",
+      "base",
+      "link"
+    ],
+    "description": " The URL of a linked resource."
+  },
+  {
+    "attribute_name": "hreflang",
+    "elements": [
+      "a",
+      "area",
+      "link"
+    ],
+    "description": "Specifies the language of the linked resource."
+  },
+  {
+    "attribute_name": "http-equiv",
+    "elements": [
+      "meta"
+    ],
+    "description": ""
+  },
+  {
+    "attribute_name": "icon",
+    "elements": [
+      "command"
+    ],
+    "description": "Specifies a picture which represents the command."
+  },
+  {
+    "attribute_name": "id",
+    "elements": "global_attribute",
+    "description": "Often used with CSS to style a specific element. The value of this attribute must be unique."
+  },
+  {
+    "attribute_name": "integrity",
+    "elements": [
+      "link",
+      "script"
+    ],
+    "description": {
+      "value": "Security Feature that allows browsers to verify what they fetch.",
+      "mdn_link": "https://developer.mozilla.org/en-US/docs/"
+    }
+  },
+  {
+    "attribute_name": "ismap",
+    "elements": [
+      "img"
+    ],
+    "description": "Indicates that the image is part of a server-side image map."
+  },
+  {
+    "attribute_name": "itemprop",
+    "elements":"global_attribute",
+    "description":""
+  },
+  {
+    "attribute_name": "keytype",
+    "elements": [
+      "keygen"
+    ],
+    "description": "Specifies the type of key generated."
+  },
+  {
+    "attribute_name": "kind",
+    "elements": [
+      "track"
+    ],
+    "description": "Specifies the kind of text track."
+  },
+  {
+    "attribute_name": "label",
+    "elements": [
+      "track"
+    ],
+    "description": "Specifies a user-readable title of the text track."
+  },
+  {
+    "attribute_name": "lang",
+    "elements": "global_attribute",
+    "description": "Defines the language used in the element."
+  },
+  {
+    "attribute_name": "language",
+    "elements": [
+      "script"
+    ],
+    "description": "Defines the script language used in the element."
+  },
+  {
+    "attribute_name": "list",
+    "elements": [
+      "input"
+    ],
+    "description": "Identifies a list of pre-defined options to suggest to the user."
+  },
+  {
+    "attribute_name": "loop",
+    "elements": [
+      "audio",
+      "bgsound",
+      "marquee",
+      "video"
+    ],
+    "description": "Indicates whether the media should start playing from the start when it's finished."
+  },
+  {
+    "attribute_name": "low",
+    "elements": [
+      "meter"
+    ],
+    "description": "Indicates the upper bound of the lower range."
+  },
+  {
+    "attribute_name": "manifest",
+    "elements": [
+      "html"
+    ],
+    "description": "Specifies the URL of the document's cache manifest."
+  },
+  {
+    "attribute_name": "max",
+    "elements": [
+      "input",
+      "meter",
+      "progress"
+    ],
+    "description": "Indicates the maximum value allowed."
+  },
+  {
+    "attribute_name": "maxlength",
+    "elements": [
+      "input",
+      "textarea"
+    ],
+    "description": "Defines the maximum number of characters allowed in the element."
+  },
+  {
+    "attribute_name": "minlength",
+    "elements": [
+      "input",
+      "textarea"
+    ],
+    "description": "Defines the minimum number of characters allowed in the element."
+  },
+  {
+    "attribute_name": "media",
+    "elements": [
+      "a",
+      "area",
+      "link",
+      "source",
+      "style"
+    ],
+    "description": "Specifies a hint of the media for which the linked resource was designed."
+  },
+  {
+    "attribute_name": "method",
+    "elements": [
+      "form"
+    ],
+    "description": "Defines which HTTP method to use when submitting the form. Can be GET (default) or POST."
+  },
+  {
+    "attribute_name": "min",
+    "elements": [
+      "input",
+      "meter"
+    ],
+    "description": "Indicates the minimum value allowed."
+  },
+  {
+    "attribute_name": "multiple",
+    "elements": [
+      "input",
+      "select"
+    ],
+    "description": "Indicates whether multiple values can be entered in an input of the type email or file."
+  },
+  {
+    "attribute_name": "muted",
+    "elements": [
+      "audio",
+      "video"
+    ],
+    "description": "Indicates whether the audio will be initially silenced on page load."
+  },
+  {
+    "attribute_name": "name",
+    "elements": [
+      "button",
+      "form",
+      "fieldset",
+      "iframe",
+      "input",
+      "keygen",
+      "object",
+      "output",
+      "select",
+      "textarea",
+      "map",
+      "meta",
+      "param"
+    ],
+    "description": "Name of the element. For example used by the server to identify the fields in form submits."
+  },
+  {
+    "attribute_name": "novalidate",
+    "elements": [
+      "form"
+    ],
+    "description": "This attribute indicates that the form shouldn't be validated when submitted."
+  },
+  {
+    "attribute_name": "open",
+    "elements": [
+      "details"
+    ],
+    "description": "Indicates whether the details will be shown on page load."
+  },
+  {
+    "attribute_name": "optimum",
+    "elements": [
+      "meter"
+    ],
+    "description": "Indicates the optimal numeric value."
+  },
+  {
+    "attribute_name": "pattern",
+    "elements": [
+      "input"
+    ],
+    "description": "Defines a regular expression which the element's value will be validated against."
+  },
+  {
+    "attribute_name": "ping",
+    "elements": [
+      "a",
+      "area"
+    ],
+    "description":""
+  },
+  {
+    "attribute_name": "placeholder",
+    "elements": [
+      "input",
+      "textarea"
+    ],
+    "description": "Provides a hint to the user of what can be entered in the field."
+  },
+  {
+    "attribute_name": "poster",
+    "elements": [
+      "video"
+    ],
+    "description": "A URL indicating a poster frame to show until the user plays or seeks."
+  },
+  {
+    "attribute_name": "preload",
+    "elements": [
+      "audio",
+      "video"
+    ],
+    "description": "Indicates whether the whole resource, parts of it or nothing should be preloaded."
+  },
+  {
+    "attribute_name": "radiogroup",
+    "elements": [
+      "command"
+    ],
+    "description":""
+  },
+  {
+    "attribute_name": "readonly",
+    "elements": [
+      "input",
+      "textarea"
+    ],
+    "description": "Indicates whether the element can be edited."
+  },
+  {
+    "attribute_name": "rel",
+    "elements": [
+      "a",
+      "area",
+      "link"
+    ],
+    "description": "Specifies the relationship of the target object to the link object."
+  },
+  {
+    "attribute_name": "required",
+    "elements": [
+      "input",
+      "select",
+      "textarea"
+    ],
+    "description": "Indicates whether this element is required to fill out or not."
+  },
+  {
+    "attribute_name": "reversed",
+    "elements": [
+      "ol"
+    ],
+    "description": "Indicates whether the list should be displayed in a descending order instead of a ascending."
+  },
+  {
+    "attribute_name": "rows",
+    "elements": [
+      "textarea"
+    ],
+    "description": "Defines the number of rows in a text area."
+  },
+  {
+    "attribute_name": "rowspan",
+    "elements": [
+      "td",
+      "th"
+    ],
+    "description": "Defines the number of rows a table cell should span over."
+  },
+  {
+    "attribute_name": "sandbox",
+    "elements": [
+      "iframe"
+    ],
+    "description":""
+  },
+  {
+    "attribute_name": "scope",
+    "elements": [
+      "th"
+    ],
+    "description":""
+  },
+  {
+    "attribute_name": "scoped",
+    "elements": [
+      "style"
+    ],
+    "description":""
+  },
+  {
+    "attribute_name": "seamless",
+    "elements": [
+      "iframe"
+    ],
+    "description":""
+  },
+  {
+    "attribute_name": "selected",
+    "elements": [
+      "option"
+    ],
+    "description": "Defines a value which will be selected on page load."
+  },
+  {
+    "attribute_name": "shape",
+    "elements": [
+      "a",
+      "area"
+    ],
+    "description":""
+  },
+  {
+    "attribute_name": "size",
+    "elements": [
+      "input",
+      "select"
+    ],
+    "description": "Defines the width of the element (in pixels). If the element's type attribute is text or password then it's the number of characters."
+  },
+  {
+    "attribute_name": "sizes",
+    "elements": [
+      "link",
+      "img",
+      "source"
+    ],
+    "description":""
+  },
+  {
+    "attribute_name": "slot",
+    "elements": "global_attribute",
+    "description": "Assigns a slot in a shadow DOM shadow tree to an element."
+  },
+  {
+    "attribute_name": "span",
+    "elements": [
+      "col",
+      "colgroup"
+    ],
+    "description":""
+  },
+  {
+    "attribute_name": "spellcheck",
+    "elements": "global_attribute",
+    "description": "Indicates whether spell checking is allowed for the element."
+  },
+  {
+    "attribute_name": "src",
+    "elements": [
+      "audio",
+      "embed",
+      "iframe",
+      "img",
+      "input",
+      "script",
+      "source",
+      "track",
+      "video"
+    ],
+    "description": "The URL of the embeddable content."
+  },
+  {
+    "attribute_name": "srcdoc",
+    "elements": [
+      "iframe"
+    ],
+    "description":""
+  },
+  {
+    "attribute_name": "srclang",
+    "elements": [
+      "track"
+    ],
+    "description":""
+  },
+  {
+    "attribute_name": "srcset",
+    "elements": [
+      "img"
+    ],
+    "description":""
+  },
+  {
+    "attribute_name": "start",
+    "elements": [
+      "ol"
+    ],
+    "description": "Defines the first number if other than 1."
+  },
+  {
+    "attribute_name": "step",
+    "elements": [
+      "input"
+    ],
+    "description":""
+  },
+  {
+    "attribute_name": "style",
+    "elements": "global_attribute",
+    "description": "Defines CSS styles which will override styles previously set."
+  },
+  {
+    "attribute_name": "summary",
+    "elements": [
+      "table"
+    ],
+    "description":""
+  },
+  {
+    "attribute_name": "tabindex",
+    "elements": "global_attribute",
+    "description": "Overrides the browser's default tab order and follows the one specified instead."
+  },
+  {
+    "attribute_name": "target",
+    "elements": [
+      "a",
+      "area",
+      "base",
+      "form"
+    ],
+    "description":""
+  },
+  {
+    "attribute_name": "title",
+    "elements": "global_attribute",
+    "description": "Text to be displayed in a tooltip when hovering over the element."
+  },
+  {
+    "attribute_name": "type",
+    "elements": [
+      "button",
+      "input",
+      "command",
+      "embed",
+      "object",
+      "script",
+      "source",
+      "style",
+      "menu"
+    ],
+    "description": "Defines the type of the element."
+  },
+  {
+    "attribute_name": "usemap",
+    "elements": [
+      "img>,  <input",
+      "object"
+    ],
+    "description":""
+  },
+  {
+    "attribute_name": "value",
+    "elements": [
+      "button",
+      "option",
+      "input",
+      "li",
+      "meter",
+      "progress",
+      "param"
+    ],
+    "description": "Defines a default value which will be displayed in the element on page load."
+  },
+  {
+    "attribute_name": "width",
+    "elements": [
+      "canvas",
+      "embed",
+      "iframe",
+      "img",
+      "input",
+      "object",
+      "video"
+    ],
+    "description": {
+      "value":"For the elements listed here, this establishes the element's width.",
+      "note":"For all other instances, such as <div>, this is a legacy attribute, in which case the CSS width property should be used instead."
+    }
+  },
+  {
+    "attribute_name": "wrap",
+    "elements": [
+      "textarea"
+    ],
+    "description": "Indicates whether the text should be wrapped."
+  }
+]

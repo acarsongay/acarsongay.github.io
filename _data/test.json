@@ -1,16 +1,8 @@
-[
-  {
-    "element":"ul",
-    "content": "Test",
-    "json": [
-      {
-        "element": "li",
-        "content": "Test"
-      },
-      {
-        "element": "li",
-        "content": "Test"
-      }
-    ]
+{
+  "html": {
+    "head": {
+      "title": "Test"
+    },
+    "body": "Test"
   }
-]
+}
