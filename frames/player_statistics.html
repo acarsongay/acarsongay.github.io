@@ -1,0 +1,14 @@
+---
+title: "Player Statistics"
+---
+<legend>
+    <ul>
+        {% for statistic in site.data.player_statistics %}
+        <li>
+            <a href="" title="{{ statistic.title }}">
+                {{ statistic.html }}
+            </a>
+        </li>
+        {% endfor %}
+    </ul>
+</legend>

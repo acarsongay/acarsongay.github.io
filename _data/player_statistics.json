@@ -1,0 +1,43 @@
+[
+  {
+    "name": "fire",
+    "title": "Fire",
+    "description": "Number of ticks until the fire is put out. Negative values reflect how long the entity can stand in fire before burning. Default -20 when not on fire",
+    "type": "short",
+    "unicode": " U+1F525",
+    "html": "&#128293;",
+    "character": "🔥",
+    "value": -20
+  },
+  {
+    "name": "sleeping",
+    "title": "Sleeping",
+    "description": "1 or 0 (true/false) - true if the player was in a bed; has no effect on whether the player is in a bed when they log in.",
+    "type": "byte",
+    "unicode": "U+1F6CC",
+    "html": "&#128716;",
+    "character": "🛌",
+    "value": 0
+  },
+  {
+    "character": "🎵"
+  },
+  {
+    "character": "📹"
+  },
+  {
+    "character": "⛏"
+  },
+  {
+    "character": "🍳"
+  },
+  {
+    "character": "🎄"
+  },
+  {
+    "character": "🎣"
+  },
+  {
+    "character": "🏊"
+  }
+]

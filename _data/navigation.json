@@ -1,0 +1,37 @@
+[
+  {
+    "title":"Home",
+    "href":"/frames/home.html",
+    "content":"🏡"
+  },
+  {
+    "title":"News",
+    "href":"/frames/news.html",
+    "content":"📰"
+  },
+  {
+    "title":"Chat Room",
+    "href":"/frames/chat_room.html",
+    "content":"🗨"
+  },
+  {
+    "title":"Player Statistics",
+    "href":"/frames/player_statistics.html",
+    "content":"👨"
+  },
+  {
+    "title":"Remote Console",
+    "href":"/frames/remote_console.html",
+    "content":"💻"
+  },
+  {
+    "title":"Donation Page",
+    "href":"/frames/donation.html",
+    "content":"💸"
+  },
+  {
+    "title":"Play Minecraft",
+    "href":"/frames/play.html",
+    "content":"🎮"
+  }
+]

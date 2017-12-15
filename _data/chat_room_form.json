@@ -1,0 +1,51 @@
+[
+  {
+    "element":"script",
+    "type":"text/javascript",
+    "content": "var submitted=false;"
+  },
+  {
+    "element":"iframe",
+    "name":"hidden_iframe",
+    "id":"hidden_iframe",
+    "style":"display:none;",
+    "onload":"if(submitted) {window.location='/chat_room.html';}"
+  },
+  {
+    "element":"form",
+    "action": "https://docs.google.com/forms/d/1ZE66gIU2Qb10MmluYxXOstpgchH-saJpqpxtwbdgyis/formResponse?embedded=true",
+    "method": "POST",
+    "target": "hidden_iframe",
+    "onsubmit":"submitted=true;",
+    "json": [
+      {
+        "element":"div",
+        "json": [
+          {
+            "element": "label",
+            "class": "chat_post_label",
+            "for": "entry_1737242977",
+            "content": "Minecraft Name:"
+          },
+          {
+            "element":"input",
+            "class":"chat_post_input",
+            "type":"text",
+            "name": "entry_1737242977",
+            "value": " ",
+            "id": "entry_1737242977",
+            "dir": "auto"
+          }
+        ]
+      },
+      {
+        "element":"input",
+        "action":"./chat_room.html",
+        "type":"submit",
+        "name":"submit",
+        "value":"Send",
+        "id":"ss-submit"
+      }
+    ]
+  }
+]

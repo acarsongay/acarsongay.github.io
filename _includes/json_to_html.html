@@ -1,0 +1,12 @@
+{% for object in include.json %}
+    {% if object.element %}
+    <{{ object.element }}>
+        {% if object.content %}
+            {{ object.content }}
+        {% endif %}
+        {% if object.json %}
+            {% include json_to_html.html json=object.json %}
+        {% endif %}
+    </{{ object.element }}>
+    {% endif %}
+{% endfor %}

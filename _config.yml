@@ -1,5 +1,7 @@
+goal: Global configuration data
+
 #Title of the website
-website_title: "Centural"
+title: "Centural"
 
 #Google Excell Chat Response Spreadsheet ID
 chatbox_sheet_id: "1xAbPj6YgOWm2LzgrArirLceLfaJZEJ5D2pbo3WkR_x0"
@@ -7,3 +9,7 @@ chatbox_sheet_id: "1xAbPj6YgOWm2LzgrArirLceLfaJZEJ5D2pbo3WkR_x0"
 #Google API Key
 google_client_id: "682787828036-4g2eq0jk4csvk4lrkjbfm33682v7cptq.apps.googleusercontent.com"
 google_api_key: "AIzaSyBufUkPuFTjj1nGfAuJs_hk6qSTrPJVJMA"
+
+#PayPal
+paypal:
+  donation_href: "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8FHXMBEU5GMUU"

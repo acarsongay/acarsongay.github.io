@@ -1,0 +1,11 @@
+<nav>
+    <ul>
+        {% for item in site.data.navigation %}
+        <li>
+            <button title="{{ item.title }}" onclick='frame("{{ item.href }}");'>
+                {{ item.content }}
+            </button>
+        </li>
+        {% endfor %}
+    </ul>
+</nav>

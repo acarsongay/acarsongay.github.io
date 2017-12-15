@@ -1,14 +1,20 @@
 <!DOCTYPE html>
 <html>
-  <head>
+    <head>
 
-  	{% include google_analytics.html %}
-  	{% include google_site_verification.html %}
+        {% include scripts.html %}
+        {% include meta.html %}
+        {% include stylesheets.html %}
 
-    <title>{{ page.title }}</title>
-    <meta charset='utf-8' />
-  </head>
-  <body>
-    {{ content }}
-  </body>
+        {% include title.html %}
+    </head>
+    <body>
+
+        {% include header.html %}
+        <div id="frame_canvas">
+            <iframe id="frame" height="600px" width="800px"></iframe>
+            {{ content }}
+        </div>
+
+    </body>
 </html>
